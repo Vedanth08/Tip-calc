@@ -25,7 +25,7 @@
          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
          <!-- CSS Link -->
-        <link href="styles.css" rel="stylesheet" type="text/css">
+        <link href="styles.css" rel="stylesheet" >
 
     </head>
 
@@ -36,16 +36,15 @@
             <div class="card tipcalculatorCard">
 
                 <div class="card-header tipcalculatorHeader">
+
                     <h4 class="">Tip Calculator</h4>
+
                 </div>
 
-                <div class="card-body">
+                <div class="card-body calcuator-body">
 
                     <p class="text">Enter the Bill Amount : </p>
                     <input type="text" class="billamountField textInput" id="billamountField" placeholder= "Amount">
-
-                    <p class="text">Enter the Percentage of Amount : </p>
-                    <input type="text" class="percentageField textInput" id = "percentageField" placeholder= "Percentage(%)">
 
                     <p class="text">Enter the Tip Amount : </p>
                     <input type="text" class="tipamountField textInput" id = "tipamountField" placeholder= "Total Tip Amount">
@@ -53,14 +52,22 @@
                     <p class="text">Enter the Total Amount : </p>
                     <input type="text" class="totalamountField textInput" id = "totalamountField" placeholder= "Total Amount">
 
+                    <p class="text">Tip Percentage : 3%</p>
+
+                    <p class="text"> Total Tax Percentage : 5% including (S.GST & C.GST )</p>
+
                     <p class="errormessageField" id="errormessageField"></p>
 
                 </div>
                 
-                <div class="card-footer calcuate">
+                <div class="card-footer calcuator-footer">
+
                     <button class="calcuteButton" type="button" id="button" onclick="caluteButton()">
+
                         <strong>Calcuate</strong>
+
                     </button>
+
                 </div>
 
             </div>
