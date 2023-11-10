@@ -1,9 +1,15 @@
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 .tipCalculator{
     position: absolute; /*  This following code will be used to center or middle section in the page */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin: 30px 0px;
 }
 
 .tipcalculatorCard{

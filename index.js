@@ -1,6 +1,6 @@
 var billamountElement = document.getElementById("billamountField");
 
-var percentageElement = document.getElementById("percentageField");
+var tip_percentageElement = document.getElementById("tip_percentageField");
 
 var tipamountElement = document.getElementById("tipamountField");
 
@@ -19,25 +19,44 @@ function caluteButton(){
 
     let tip_percentageValue = 3;
 
-    let tax_percentageValue = 5;
-
-
     let tipCalculation = (billAmount)*(tip_percentageValue) /100;
 
     tipamountElement.value = tipCalculation;
 
+    let tax_percentageValue = 5;
+
     let tax_Calucation = (billAmount)*(tax_percentageValue) /100;
 
-    let totalamountResult = Math.ceil( billAmount + tipCalculation + tax_Calucation);
 
-    totalamountElement.value = totalamountResult;
+    let usertip_percentage = parseInt(tip_percentageElement);
 
+    let usertip_calculation = (billAmount)*(usertip_percentage) / 100;
+
+    // Tip calucation 
+
+    if (tip_percentageElement.value === ""){
+
+        let totalamountResult = Math.ceil( billAmount + tipCalculation + tax_Calucation);
+
+        totalamountElement.value = totalamountResult;
+
+    }
+
+    else {
+
+        let totalamountResult = Math.ceil( billAmount + usertip_calculation + tax_Calucation );
+
+        totalamountElement.value = totalamountResult;
+
+    }
+
+    // Error Message Alert
     
     if( billamountElement.value ==="" ){
 
         consoleMessageField.textContent = "Please provide the amount ";
 
-    }
+    } 
 
     else if (typeof(billamountElement.value) !== "number"){
 
