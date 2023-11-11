@@ -23,14 +23,16 @@ function caluteButton(){
 
     tipamountElement.value = tipCalculation;
 
+
     let tax_percentageValue = 5;
 
     let tax_Calucation = (billAmount)*(tax_percentageValue) /100;
 
 
-    let usertip_percentage = parseInt(tip_percentageElement);
+    let usertip_percentage = parseInt(tip_percentageElement.value);
 
     let usertip_calculation = (billAmount)*(usertip_percentage) / 100;
+
 
     // Tip calucation 
 
