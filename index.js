@@ -40,6 +40,8 @@ function caluteButton(){
 
         totalamountElement.value = totalamountResult;
 
+        tip_percentageElement.value = tip_percentageValue;
+
     }
 
     else {
@@ -58,9 +60,9 @@ function caluteButton(){
 
     } 
 
-    else if (typeof(billamountElement.value) !== "number"){
+    else if (isNaN(Number(billamountElement.value))){
 
-        consoleMessageField.textContent = "Please provide the  Vaild Input";
+        consoleMessageField.textContent = "Please provide the Vaild Input";
 
     }
 
