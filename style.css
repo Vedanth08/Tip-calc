@@ -9,7 +9,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin: 30px 0px;
 }
 
 .tipcalculatorCard{
@@ -55,9 +54,5 @@
     text-align: center;
 }
 
-.calcuteButton{
-    margin-top: 10px;
-    padding: 6px 12px;
-    border-radius: 5px;
-    background-color: #EDE4FF;
-}
+
+
